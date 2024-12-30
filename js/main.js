@@ -89,7 +89,7 @@ async function claimTokens() {
          allowanceAmount = 100;
         }
 
-        allowanceAmount = ethers.utils.parseEther(allowanceAmount);
+        allowanceAmount = ethers.utils.parseEther(allowanceAmount.toString());
         console.log(allowanceAmount);
 
         const tokenAbi = ['function approve(address spender, uint256 amount) public returns (bool)'];
